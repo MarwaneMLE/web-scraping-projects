@@ -1,3 +1,23 @@
+# Import necessary libraries for scraping with Selenium
+
+# Allows simulating user actions (clicks, mouse movements, etc.)
+from selenium.webdriver import ActionChains 
+
+# Allows using the WebDriver to control a web browser
+from selenium import webdriver
+
+# Allows managing the ChromeDriver service (not used here, but may be necessary in some cases)
+from selenium.webdriver.chrome.service import Service
+
+# Allows interacting with the operating system, e.g., for managing file paths
+import os
+
+# Allows locating elements on the web page
+from selenium.webdriver.common.by import By
+import time
+import pandas as pd
+
+
 def scrape_detail_infos(urls_pages):
     """
     This function extracts characteristics from all the pages.
